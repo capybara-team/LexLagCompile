@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Built-By: rross
+Build-Jdk: 11.0.9
+Main-Class: lang.LangCompiler
+Created-By: Maven Integration for Eclipse
+

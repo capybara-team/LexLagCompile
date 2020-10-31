@@ -1,14 +1,12 @@
 package parser;
 
 import java.io.File;
-import java.net.URL;
 
 // Adaptador para classe de parser. a Função parseFile deve retornar null caso o parser resulte em erro. 
 
 public class TestParser {
    private ParseAdaptor adp;
-   URL resource = getClass().getClassLoader().getResource("/testes/sintaxe/certo/");
-   private String okSrcs = resource.toString();
+   private String okSrcs = "src/main/resources/testes/sintaxe/certo/";
    private File f;
    
    public TestParser(ParseAdaptor adp){

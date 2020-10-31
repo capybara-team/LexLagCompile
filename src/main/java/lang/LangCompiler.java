@@ -1,6 +1,7 @@
 package lang;
 
 import ast.SuperNode;
+import parser.LexLangParseAdaptor;
 import parser.ParseAdaptor;
 import parser.TestParser;
 
@@ -26,7 +27,7 @@ public class LangCompiler{
           
        }
        try{
-	   ParseAdaptor langParser = null;
+	   ParseAdaptor langParser =  new LexLangParseAdaptor();
           
           if(args[0].equals("-bs") ){
               System.out.println("Executando bateria de testes sintáticos:");
