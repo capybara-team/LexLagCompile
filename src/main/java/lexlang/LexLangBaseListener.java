@@ -1,4 +1,4 @@
-// Generated from LexLang.g4 by ANTLR 4.8
+// Generated from final/LexLang.g4 by ANTLR 4.8
 
 package lexlang;
 

@@ -6,7 +6,7 @@ import java.io.File;
 
 public class TestParser {
    private ParseAdaptor adp;
-   private String okSrcs = "testes/sintaxe";
+   private String okSrcs = "src/main/resources/testes/sintaxe/certo";
    private File f;
    
    public TestParser(ParseAdaptor adp){
