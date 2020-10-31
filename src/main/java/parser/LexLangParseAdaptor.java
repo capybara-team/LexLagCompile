@@ -1,3 +1,7 @@
+/*
+ * @author Maxwell Souza    201435009
+ * @author Rodolpho Rossete 201435032
+ */
 package parser;
 
 import org.antlr.v4.runtime.CharStream;

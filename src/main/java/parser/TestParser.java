@@ -1,9 +1,13 @@
+/*
+ * @author Maxwell Souza    201435009
+ * @author Rodolpho Rossete 201435032
+ */
 package parser;
 
 import java.io.File;
 import java.util.Objects;
 
-// Adaptador para classe de parser. a FunÁ„o parseFile deve retornar null caso o parser resulte em erro. 
+// Adaptador para classe de parser. a Fun√ß√£o parseFile deve retornar null caso o parser resulte em erro.
 
 public class TestParser {
    private ParseAdaptor adp;
@@ -49,7 +53,7 @@ public class TestParser {
                System.out.println("Total de acertos: " + flips );
                System.out.println("Total de erros: " + flops );
            }else{
-              System.out.println("O caminho " + f.getPath() + " n„o È um diretÛrio ou n„o existe.");
+              System.out.println("O caminho " + f.getPath() + " n√£o √© um diret√≥rio ou n√£o existe.");
            }
            
        }catch(Exception e){

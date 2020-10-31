@@ -1,5 +1,9 @@
 // Generated from final/LexLang.g4 by ANTLR 4.8
 
+/*
+ * @author Maxwell Souza    201435009
+ * @author Rodolpho Rossete 201435032
+ */
 package lexlang;
 
 import org.antlr.v4.runtime.Lexer;
