@@ -5,6 +5,7 @@ parser\TestParser.class
 lexlang\LexLangParser$BtypeContext.class
 lexlang\LexLangParser$FuncContext.class
 ast\LexLangSuperNote.class
+lexlang\LexLangBaseListener.class
 lexlang\LexLangParser$MexpContext.class
 lexlang\LexLangParser$PexpContext.class
 lexlang\LexLangParser$SexpContext.class
