@@ -10,7 +10,7 @@ import parser.ParseAdaptor;
 import parser.TestParser;
 
 public class LangCompiler {
-	// Recupera o nome base (sem extens�o) de um arquivo.
+	// Recupera o nome base (sem extensão) de um arquivo.
 	public static void main(String[] args) {
 		if (args.length < 1) {
 			System.out.println("Lang compiler v 0.0.1 - Outubro de 2020");
@@ -18,6 +18,7 @@ public class LangCompiler {
 			System.out.println("Ação (uma das seguintes possibilidades): ");
 
 			System.out.println(" -bs : Executa uma bateria de testes sintáticos;");
+			System.out.println(" -bs <caminho_pasta>: Executa uma bateria de testes sintáticos em uma pasta específica;");
 			System.out
 					.println(" <nome_arquivo> : Executa uma bateria de testes sintáticos para um arquivo específico.");
 

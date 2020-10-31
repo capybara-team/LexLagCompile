@@ -29,8 +29,6 @@ public class LexLangParseAdaptor implements ParseAdaptor {
 
 			ParseTree tree = parser.prog();
 			
-			parser.getNumberOfSyntaxErrors();
-			
 			if(parser.getNumberOfSyntaxErrors() > 0) {
 				return null;
 			}
