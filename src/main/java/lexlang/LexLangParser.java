@@ -1,4 +1,4 @@
-// Generated from final/LexLang.g4 by ANTLR 4.8
+// Generated from LexLang.g4 by ANTLR 4.8
 
 /*
  * @author Maxwell Souza    201435009
@@ -1413,11 +1413,8 @@ public class LexLangParser extends Parser {
 		public ExpContext exp() {
 			return getRuleContext(ExpContext.class,0);
 		}
-		public BtypeContext btype() {
-			return getRuleContext(BtypeContext.class,0);
-		}
-		public SexpContext sexp() {
-			return getRuleContext(SexpContext.class,0);
+		public TypeContext type() {
+			return getRuleContext(TypeContext.class,0);
 		}
 		public TerminalNode ID() { return getToken(LexLangParser.ID, 0); }
 		public ExpsContext exps() {
@@ -1469,7 +1466,7 @@ public class LexLangParser extends Parser {
 				setState(264);
 				match(T__9);
 				setState(265);
-				btype();
+				type(0);
 				setState(270);
 				_errHandler.sync(this);
 				switch ( getInterpreter().adaptivePredict(_input,24,_ctx) ) {
@@ -1478,7 +1475,7 @@ public class LexLangParser extends Parser {
 					setState(266);
 					match(T__7);
 					setState(267);
-					sexp();
+					exp(0);
 					setState(268);
 					match(T__8);
 					}
@@ -1859,10 +1856,10 @@ public class LexLangParser extends Parser {
 		"\2\2\u0103\u00ff\3\2\2\2\u0103\u0100\3\2\2\2\u0103\u0101\3\2\2\2\u0103"+
 		"\u0102\3\2\2\2\u0104\33\3\2\2\2\u0105\u011f\5\36\20\2\u0106\u0107\7\7"+
 		"\2\2\u0107\u0108\5\22\n\2\u0108\u0109\7\b\2\2\u0109\u011f\3\2\2\2\u010a"+
-		"\u010b\7\f\2\2\u010b\u0110\5\16\b\2\u010c\u010d\7\n\2\2\u010d\u010e\5"+
-		"\32\16\2\u010e\u010f\7\13\2\2\u010f\u0111\3\2\2\2\u0110\u010c\3\2\2\2"+
-		"\u0110\u0111\3\2\2\2\u0111\u011f\3\2\2\2\u0112\u0113\7\36\2\2\u0113\u0115"+
-		"\7\7\2\2\u0114\u0116\5 \21\2\u0115\u0114\3\2\2\2\u0115\u0116\3\2\2\2\u0116"+
+		"\u010b\7\f\2\2\u010b\u0110\5\f\7\2\u010c\u010d\7\n\2\2\u010d\u010e\5\22"+
+		"\n\2\u010e\u010f\7\13\2\2\u010f\u0111\3\2\2\2\u0110\u010c\3\2\2\2\u0110"+
+		"\u0111\3\2\2\2\u0111\u011f\3\2\2\2\u0112\u0113\7\36\2\2\u0113\u0115\7"+
+		"\7\2\2\u0114\u0116\5 \21\2\u0115\u0114\3\2\2\2\u0115\u0116\3\2\2\2\u0116"+
 		"\u0117\3\2\2\2\u0117\u011c\7\b\2\2\u0118\u0119\7\n\2\2\u0119\u011a\5\22"+
 		"\n\2\u011a\u011b\7\13\2\2\u011b\u011d\3\2\2\2\u011c\u0118\3\2\2\2\u011c"+
 		"\u011d\3\2\2\2\u011d\u011f\3\2\2\2\u011e\u0105\3\2\2\2\u011e\u0106\3\2"+

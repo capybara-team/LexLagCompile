@@ -1,4 +1,4 @@
-// Generated from final/LexLang.g4 by ANTLR 4.8
+// Generated from LexLang.g4 by ANTLR 4.8
 
 /*
  * @author Maxwell Souza    201435009
