@@ -4,15 +4,14 @@
  */
 package parser;
 
-import org.antlr.v4.runtime.CharStream;
-import org.antlr.v4.runtime.CharStreams;
-import org.antlr.v4.runtime.CommonTokenStream;
-import org.antlr.v4.runtime.tree.ParseTree;
-
 import ast.LexLangSuperNote;
 import ast.SuperNode;
 import lexlang.LexLangLexer;
 import lexlang.LexLangParser;
+import org.antlr.v4.runtime.CharStream;
+import org.antlr.v4.runtime.CharStreams;
+import org.antlr.v4.runtime.CommonTokenStream;
+import org.antlr.v4.runtime.tree.ParseTree;
 
 public class LexLangParseAdaptor implements ParseAdaptor {
 

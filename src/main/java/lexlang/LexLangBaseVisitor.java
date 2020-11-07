@@ -1,4 +1,7 @@
 // Generated from LexLang.g4 by ANTLR 4.8
+
+package lexlang;
+
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**
