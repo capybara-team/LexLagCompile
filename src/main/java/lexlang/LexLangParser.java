@@ -1,11 +1,4 @@
 // Generated from LexLang.g4 by ANTLR 4.8
-
-/*
- * @author Maxwell Souza    201435009
- * @author Rodolpho Rossete 201435032
- */
-package lexlang;
-
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -138,6 +131,11 @@ public class LexLangParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LexLangListener ) ((LexLangListener)listener).exitProg(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LexLangVisitor ) return ((LexLangVisitor<? extends T>)visitor).visitProg(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final ProgContext prog() throws RecognitionException {
@@ -209,6 +207,11 @@ public class LexLangParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LexLangListener ) ((LexLangListener)listener).exitData(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LexLangVisitor ) return ((LexLangVisitor<? extends T>)visitor).visitData(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final DataContext data() throws RecognitionException {
@@ -269,6 +272,11 @@ public class LexLangParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LexLangListener ) ((LexLangListener)listener).exitDecl(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LexLangVisitor ) return ((LexLangVisitor<? extends T>)visitor).visitDecl(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -331,6 +339,11 @@ public class LexLangParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LexLangListener ) ((LexLangListener)listener).exitFunc(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LexLangVisitor ) return ((LexLangVisitor<? extends T>)visitor).visitFunc(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -443,6 +456,11 @@ public class LexLangParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LexLangListener ) ((LexLangListener)listener).exitParams(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LexLangVisitor ) return ((LexLangVisitor<? extends T>)visitor).visitParams(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final ParamsContext params() throws RecognitionException {
@@ -509,6 +527,11 @@ public class LexLangParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LexLangListener ) ((LexLangListener)listener).exitType(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LexLangVisitor ) return ((LexLangVisitor<? extends T>)visitor).visitType(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -586,6 +609,11 @@ public class LexLangParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LexLangListener ) ((LexLangListener)listener).exitBtype(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LexLangVisitor ) return ((LexLangVisitor<? extends T>)visitor).visitBtype(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -666,6 +694,11 @@ public class LexLangParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LexLangListener ) ((LexLangListener)listener).exitCmd(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LexLangVisitor ) return ((LexLangVisitor<? extends T>)visitor).visitCmd(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -900,6 +933,11 @@ public class LexLangParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LexLangListener ) ((LexLangListener)listener).exitExp(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LexLangVisitor ) return ((LexLangVisitor<? extends T>)visitor).visitExp(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final ExpContext exp() throws RecognitionException {
@@ -983,6 +1021,11 @@ public class LexLangParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LexLangListener ) ((LexLangListener)listener).exitRexp(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LexLangVisitor ) return ((LexLangVisitor<? extends T>)visitor).visitRexp(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1098,6 +1141,11 @@ public class LexLangParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LexLangListener ) ((LexLangListener)listener).exitAexp(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LexLangVisitor ) return ((LexLangVisitor<? extends T>)visitor).visitAexp(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final AexpContext aexp() throws RecognitionException {
@@ -1196,6 +1244,11 @@ public class LexLangParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LexLangListener ) ((LexLangListener)listener).exitMexp(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LexLangVisitor ) return ((LexLangVisitor<? extends T>)visitor).visitMexp(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1312,6 +1365,11 @@ public class LexLangParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LexLangListener ) ((LexLangListener)listener).exitSexp(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LexLangVisitor ) return ((LexLangVisitor<? extends T>)visitor).visitSexp(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1431,6 +1489,11 @@ public class LexLangParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LexLangListener ) ((LexLangListener)listener).exitPexp(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LexLangVisitor ) return ((LexLangVisitor<? extends T>)visitor).visitPexp(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1552,6 +1615,11 @@ public class LexLangParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LexLangListener ) ((LexLangListener)listener).exitLvalue(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LexLangVisitor ) return ((LexLangVisitor<? extends T>)visitor).visitLvalue(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final LvalueContext lvalue() throws RecognitionException {
@@ -1653,6 +1721,11 @@ public class LexLangParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LexLangListener ) ((LexLangListener)listener).exitExps(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LexLangVisitor ) return ((LexLangVisitor<? extends T>)visitor).visitExps(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
